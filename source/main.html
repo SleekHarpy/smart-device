@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Lifetour</title>
+    <title>Smart Device</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,7 +23,34 @@
       <include src="build/img/sprite_auto.svg"></include>
     </div>
 
-
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <nav class="main-navigation">
+          <a class="main-navigation__logo">
+            <div class="main-navigation__logo-image main-navigation__logo-image--desktop">
+              <img src="img/logo-desktop.svg" alt="Логотип Smart Device">
+            </div>
+            <div class="main-navigation__logo-image main-navigation__logo-image--mobile">
+              <img src="img/logo-mobile.svg" alt="Логотип Smart Device">
+            </div>
+          </a>
+          <button type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <a href="mailto:info@sd.ru" class="main-navigation__email">
+            <svg class="main-navigation__icon" width="19" height="14">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+            <span class="main-navigation__email-text">info@sd.ru</span>
+          </a>
+          <a class="main-navigation__phone" href="tel:+74950005252">
+            <svg class="main-navigation__icon" width="19" height="14">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <span class="main-navigation__phone-text">+7 (495) 000 52 52</span>
+          </a>
+          <button class="main-navigation__call" type="button">Заказать звонок</button>
+        </nav>
+      </div>
+    </header>
 
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
