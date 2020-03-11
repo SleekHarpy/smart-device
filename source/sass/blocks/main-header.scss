@@ -1,0 +1,28 @@
+.main-header {
+  background-color: $background-color;
+}
+
+.main-header__wrapper {
+  margin: 0 auto;
+  padding: 33px 0;
+  padding-left: 13.2%;
+  padding-right: 13.3%;
+
+  max-width: $desktop-max-width;
+}
+
+@media (max-width: $tablet-max-width) {
+  .main-header__wrapper {
+    padding: 20px 0;
+    padding-left: 3.1%;
+    padding-right: 3.2%;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .main-header__wrapper {
+    padding: 17px 0;
+    padding-left: 5.2%;
+    padding-right: 5%;
+  }
+}
