@@ -1,0 +1,257 @@
+.main-footer {
+  overflow-x: hidden;
+}
+
+.main-footer__wrapper {
+  margin: 0 auto;
+  padding-left: 13.1%;
+  padding-right: 13.3%;
+
+  max-width: $desktop-max-width;
+}
+
+.main-footer__top {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 59px;
+
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: calc(-50vw + 50%);
+
+    display: block;
+    width: 100vw;
+    height: 1px;
+
+    background-color: $border-color;
+    opacity: 0.2;
+
+    content: "";
+  }
+}
+
+.main-footer__logo {
+  margin-right: 60px;
+  margin-bottom: 49px;
+
+  display: block;
+}
+
+.main-footer__navigation {
+  margin-right: 15px;
+}
+
+.main-footer__navigation h3,
+.main-footer__address h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $background-color;
+}
+
+.main-footer__contacts {
+  margin: 0;
+  padding: 0;
+
+  font-family: $text-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+
+  list-style: none;
+}
+
+.main-footer__contacts address {
+  font-style: normal;
+  color: $background-color;
+  text-decoration: none;
+
+  opacity: 0.5;
+}
+
+.main-footer__contacts-phone {
+  color: $background-color;
+  text-decoration: none;
+
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.main-footer__bottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-footer__confidentiality,
+.main-footer__developer {
+  font-family: $text-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $background-color;
+  text-decoration: none;
+
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.main-footer__confidentiality {
+  margin-right: auto;
+}
+
+@media (max-width: $tablet-max-width) {
+  .main-footer__wrapper {
+    padding-left: 3.1%;
+    padding-right: 1%;
+  }
+
+  .main-footer__top {
+    padding-top: 19px;
+    padding-bottom: 37px;
+
+    flex-wrap: wrap;
+  }
+
+  .main-footer__social {
+    margin-bottom: 11px;
+
+    display: flex;
+    width: 100%;
+  }
+
+  .main-footer__logo {
+    margin-right: 88px;
+  }
+
+  .main-footer__navigation {
+    width: 45%;
+  }
+
+  .main-footer__address {
+    margin-right: 28px;
+  }
+
+  .main-footer__bottom {
+    padding: 20px 3px;
+    padding-right: 18px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .main-footer__wrapper {
+    padding: 0;
+  }
+
+  .main-footer__top {
+    padding-top: 46px;
+    padding-bottom: 0;
+
+    flex-direction: column;
+  }
+
+  .main-footer__social {
+    position: relative;
+    margin-bottom: 0;
+    padding-left: 1%;
+    padding-bottom: 51px;
+
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+      width: 100%;
+      height: 1px;
+
+      background-color: $border-color;
+      opacity: 0.2;
+
+      content: "";
+    }
+  }
+
+  .main-footer__logo {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .main-footer__navigation {
+    position: relative;
+    padding: 29px 4.3%;
+
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+      width: 100%;
+      height: 1px;
+
+      background-color: $border-color;
+      opacity: 0.2;
+
+      content: "";
+    }
+  }
+
+  .main-footer__address {
+    padding: 27px 4.3%;
+
+    width: 100%;
+  }
+
+  .main-footer__contacts {
+    padding-right: 10px;
+  }
+
+  .main-footer__navigation h3,
+  .main-footer__address h3 {
+    margin-bottom: 0;
+  }
+
+  .main-footer__bottom {
+    padding: 28px 2%;
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-footer__confidentiality {
+    margin: 0;
+    margin-bottom: 21px;
+  }
+}

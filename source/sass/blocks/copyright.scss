@@ -1,0 +1,49 @@
+.copyright {
+  margin-right: 142px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 457px;
+
+  font-family: $text-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $background-color;
+
+  opacity: 0.5;
+
+  &--mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .copyright {
+    width: 234px;
+    margin-right: 72px;
+
+    &--mobile {
+      margin-right: auto;
+      padding-top: 4px;
+
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .copyright {
+    &--mobile {
+      margin: 0;
+      margin-bottom: 18px;
+    }
+  }
+}
