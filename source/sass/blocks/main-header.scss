@@ -1,5 +1,13 @@
 .main-header {
   background-color: $background-color;
+  background-image: url("../img/background-intro2-desktop@1x.png"), url("../img/background-intro@1x.png");
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background-intro2-desktop@2x.png"), url("../img/background-intro@2x.png");
+    background-size: 1920px, cover;
+  }
 }
 
 .main-header__wrapper {
@@ -12,6 +20,17 @@
 }
 
 @media (max-width: $tablet-max-width) {
+  .main-header {
+    background-image: url("../img/background-intro2-tablet@1x.png"), url("../img/background-intro@1x.png");
+    background-position-y: top, top;
+    background-position-x: right, right;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-intro2-tablet@2x.png"), url("../img/background-intro@2x.png");
+      background-size: 770px, cover;
+    }
+  }
+
   .main-header__wrapper {
     padding: 20px 0;
     padding-left: 3.1%;
@@ -20,6 +39,15 @@
 }
 
 @media (max-width: $mobile-max-width) {
+  .main-header {
+    background-image: url("../img/background-intro2-mobile@1x.png"), url("../img/background-intro@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-intro2-mobile@2x.png"), url("../img/background-intro@2x.png");
+      background-size: 320px, cover;
+    }
+  }
+
   .main-header__wrapper {
     padding: 17px 0;
     padding-left: 5.2%;

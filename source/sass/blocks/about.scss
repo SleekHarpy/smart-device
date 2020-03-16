@@ -1,0 +1,127 @@
+.about {
+  margin: 0 auto;
+  padding: 27px 13.2%;
+  padding-bottom: 20px;
+  padding-left: 14.8%;
+
+  max-width: $desktop-max-width;
+
+  font-family: $text-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $text-color;
+}
+
+.about__wrapper {
+  padding-left: 270px;
+  padding-bottom: 10px;
+
+  background-image: url("../img/about-year@1x.png");
+  background-repeat: no-repeat;
+  background-size: 214px;
+  background-position-y: 3px;
+  background-position-x: 68px;
+}
+
+.about__wrapper h2 {
+  margin-bottom: 22px;
+
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  font-family: $main-font-family;
+}
+
+.about__wrapper p {
+  max-width: 985px;
+}
+
+.about__button {
+  margin-top: 40px;
+  padding: 14px;
+
+  display: block;
+  width: 180px;
+
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $secondary-color;
+  text-align: center;
+
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .about {
+    padding: 2px 3.2%;
+    padding-top: 0;
+  }
+
+  .about__wrapper {
+    padding-left: 188px;
+
+    min-height: 361px;
+
+    background-size: 244px;
+    background-position-y: -3px;
+    background-position-x: -25px;
+  }
+
+  .about__wrapper h2 {
+    margin-bottom: 26px;
+
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about__button {
+    margin-top: 42px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .about {
+    padding: 0 4.9%;
+    padding-right: 4.9%;
+  }
+
+  .about__wrapper {
+    padding: 0;
+
+    min-height: auto;
+
+    background: none;
+  }
+
+  .about__wrapper h2 {
+    margin-top: 11px;
+    margin-bottom: 21px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about__wrapper p {
+    margin-bottom: 41px;
+  }
+
+  .about__button {
+    margin-top: -13px;
+  }
+}

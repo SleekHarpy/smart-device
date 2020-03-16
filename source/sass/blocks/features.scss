@@ -1,0 +1,23 @@
+.features {
+  margin: 0 auto;
+  padding: 112px 13.2%;
+  padding-bottom: 20px;
+  padding-left: 13.2%;
+
+  max-width: $desktop-max-width;
+}
+
+@media (max-width: $tablet-max-width) {
+  .features {
+    padding: 54px 3.2%;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .features {
+    padding: 36px 4.3%;
+    padding-right: 4.9%;
+    padding-bottom: 25px;
+  }
+}
