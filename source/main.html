@@ -117,7 +117,8 @@
       </div>
 
       <section class="services">
-        <h2>Service Device предлагает следующие товары и услуги</h2>
+        <div class="services__wrapper">
+          <h2>Service Device предлагает следующие товары и услуги</h2>
         <ul class="services-list">
           <li class="services-list__item">
             <a class="services-list__link services-list__link--production" href="#">
@@ -138,6 +139,30 @@
             </a>
           </li>
         </ul>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__content">
+            <h2>Остались вопросы? Задайте их нам!</h2>
+            <p>Мы проконсультируем Вас бесплатно</p>
+            <form class="question-form" action="#" method="GET">
+              <div class="question-form__field">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input id="name" type="text" name="name" placeholder="Имя" autocomplete="name" required>
+              </div>
+              <div class="question-form__field">
+                <label class="visually-hidden" for="phone">Телефон</label>
+                <input id="phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel">
+              </div>
+              <textarea name="question" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
+              <button type="submit">Задать вопрос</button>
+              <input class="visually-hidden" id="consent" type="checkbox" required>
+              <label for="consent">Я согласен на обработку персональных данных</label>
+            </form>
+          </div>
+        </div>
       </section>
 
     </main>
