@@ -256,6 +256,28 @@
 
     </footer>
 
+    <section class="modal-request">
+      <div class="modal-request__wrapper">
+        <button class="modal-request__close" type="button"><span class="visually-hidden">Закрыть окно с формой обратной связи</span></button>
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form class="modal-form" action="#" method="GET">
+          <div class="modal-form__field">
+            <label class="visually-hidden" for="modal-name">Имя</label>
+            <input id="modal-name" type="text" name="modal-name" placeholder="Имя" autocomplete="name" required>
+          </div>
+          <div class="modal-form__field">
+            <label class="visually-hidden" for="modal-phone">Телефон</label>
+            <input id="modal-phone" type="tel" name="modal-phone" placeholder="Телефон" autocomplete="tel">
+          </div>
+          <textarea name="modal-question" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
+          <button type="submit">Отправить</button>
+          <input class="visually-hidden" id="modal-consent" type="checkbox" required>
+          <label for="modal-consent">Я согласен на обработку персональных данных</label>
+        </form>
+      </div>
+    </section>
+
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
 

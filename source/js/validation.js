@@ -17,5 +17,7 @@ $('form').validate({
     },
     name: "Введите Ваше имя",
   }
-  });
+});
+
 $('#phone').mask("+7(999)999-9999", {autoclear: false});
+$('#modal-phone').mask("+7(999)999-9999", {autoclear: false});
