@@ -1,0 +1,57 @@
+.services {
+  margin: 0 auto;
+  padding: 87px 13.2%;
+  padding-bottom: 127px;
+
+  max-width: $desktop-max-width;
+
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  color: $main-color;
+
+  background-color: $background-color;
+}
+
+.services h2 {
+  margin: 0 auto;
+  margin-bottom: 52px;
+
+  max-width: 1170px;
+
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+}
+
+@media (max-width: $tablet-max-width) {
+  .services {
+    padding: 50px 3.2%;
+  }
+
+  .services h2 {
+    margin: 0;
+    margin-bottom: 49px;
+
+    max-width: 610px;
+
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .services {
+    padding: 50px 4.4%;
+    padding-bottom: 34px;
+  }
+
+  .services h2 {
+    margin: 0;
+    margin-left: 12px;
+    margin-bottom: 42px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
