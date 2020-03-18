@@ -19,7 +19,6 @@
   padding-left: 44px;
 
   display: block;
-  //width: 100%;
   min-height: 620px;
 
   color: $main-color;
@@ -36,6 +35,7 @@
     width: 100%;
     height: 100%;
 
+    background-color: $background-color;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -46,14 +46,26 @@
 
   &--production::after {
     background-image: url("../img/background-services-desktop1@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-services-desktop1@2x.jpg");
+    }
   }
 
   &--mounting::after {
     background-image: url("../img/background-services-desktop2@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-services-desktop2@2x.jpg");
+    }
   }
 
   &--components::after {
     background-image: url("../img/background-services-desktop3@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-services-desktop2@2x.jpg");
+    }
   }
 
   &:hover,
@@ -100,14 +112,26 @@
 
     &--production::after {
       background-image: url("../img/background-services-tablet1@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/background-services-tablet1@2x.jpg");
+      }
     }
 
     &--mounting::after {
       background-image: url("../img/background-services-tablet2@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/background-services-tablet2@2x.jpg");
+      }
     }
 
     &--components::after {
       background-image: url("../img/background-services-tablet3@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/background-services-tablet2@2x.jpg");
+      }
     }
   }
 }
@@ -123,14 +147,26 @@
 
     &--production::after {
       background-image: url("../img/background-services-mobile1@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/background-services-mobile1@2x.jpg");
+      }
     }
 
     &--mounting::after {
       background-image: url("../img/background-services-mobile2@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/background-services-mobile2@2x.jpg");
+      }
     }
 
     &--components::after {
       background-image: url("../img/background-services-mobile3@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/background-services-mobile3@2x.jpg");
+      }
     }
   }
 }

@@ -41,6 +41,21 @@ $(window).resize(function () {
 
 'use strict';
 
+document.addEventListener('DOMContentLoaded', function() {
+  var ids = ['modal-name', 'modal-phone', 'modal-question'];
+	for (var id of ids) {
+    var input = document.getElementById(id);
+    input.value = localStorage.getItem(id);
+    (function(id, input) {
+      input.addEventListener('change', function() {
+        localStorage.setItem(id, input.value);
+      });
+    })(id, input);
+  }
+});
+
+'use strict';
+
 var ESC_KEYCODE = 27;
 
 var common = document.querySelector('.common');
@@ -83,7 +98,8 @@ $('form').validate({
   rules: {
     phone: {
       checkMask: true,
-      messages: false
+      messages: false,
+      required: true
     }
   },
   messages: {

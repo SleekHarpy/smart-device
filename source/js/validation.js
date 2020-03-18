@@ -8,7 +8,8 @@ $('form').validate({
   rules: {
     phone: {
       checkMask: true,
-      messages: false
+      messages: false,
+      required: true
     }
   },
   messages: {

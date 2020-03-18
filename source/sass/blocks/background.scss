@@ -1,7 +1,12 @@
 .background {
+  background-color: $main-color;
   background-image: url("../img/background-about@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -30px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background-about@2x.png");
+  }
 
 }

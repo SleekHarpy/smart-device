@@ -187,7 +187,7 @@
           <div class="contacts__content">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
-            <form class="question-form" action="#" method="GET">
+            <form class="question-form" action="#" method="GET" name="question-form">
               <div class="question-form__field">
                 <label class="visually-hidden" for="name">Имя</label>
                 <input id="name" type="text" name="name" placeholder="Имя" autocomplete="name" required="">
@@ -196,7 +196,8 @@
                 <label class="visually-hidden" for="phone">Телефон</label>
                 <input id="phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel">
               </div>
-              <textarea name="question" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
+              <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
+              <textarea id="question" name="question" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
               <button type="submit">Задать вопрос</button>
               <input class="visually-hidden" id="consent" type="checkbox" required="">
               <label for="consent">Я согласен на обработку персональных данных</label>
@@ -310,7 +311,8 @@
             <label class="visually-hidden" for="modal-phone">Телефон</label>
             <input id="modal-phone" type="tel" name="modal-phone" placeholder="Телефон" autocomplete="tel">
           </div>
-          <textarea name="modal-question" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
+          <label class="visually-hidden" for="modal-question">Введите Ваш вопрос</label>
+          <textarea id="modal-question" name="modal-question" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
           <button type="submit">Отправить</button>
           <input class="visually-hidden" id="modal-consent" type="checkbox" required="">
           <label for="modal-consent">Я согласен на обработку персональных данных</label>

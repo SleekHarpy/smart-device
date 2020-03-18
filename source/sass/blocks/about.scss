@@ -19,11 +19,17 @@
   padding-left: 270px;
   padding-bottom: 90px;
 
+  background-color: $main-color;
   background-image: url("../img/about-year@1x.png");
   background-repeat: no-repeat;
   background-size: 214px;
   background-position-y: 3px;
   background-position-x: 68px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/about-year@2x.png");
+    background-size: 214px auto;
+  }
 }
 
 .about__wrapper h2 {
