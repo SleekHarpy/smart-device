@@ -1,9 +1,9 @@
 .main-footer__wrapper {
   margin: 0 auto;
-  padding-left: 13.1%;
-  padding-right: 13.3%;
+  padding-left: 20px;
+  padding-right: 22px;
 
-  max-width: $desktop-max-width;
+  max-width: 1455px;
 }
 
 .main-footer__top {
@@ -31,15 +31,18 @@
   }
 }
 
+.main-footer__social {
+  margin-right: 10px;
+}
+
 .main-footer__logo {
-  margin-right: 60px;
   margin-bottom: 49px;
 
   display: block;
 }
 
 .main-footer__navigation {
-  margin-right: 83px;
+  margin-right: 34px;
 }
 
 .main-footer__navigation h3,
@@ -95,7 +98,6 @@
 .main-footer__bottom {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .main-footer__confidentiality,
@@ -120,6 +122,7 @@
 
 .main-footer__confidentiality {
   margin-right: auto;
+  padding-right: 10px;
 }
 
 @media (max-width: $tablet-max-width) {
@@ -136,6 +139,7 @@
   }
 
   .main-footer__social {
+    margin-right: 0;
     margin-bottom: 11px;
 
     display: flex;

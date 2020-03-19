@@ -3,7 +3,6 @@
   padding: 0;
 
   display: flex;
-  flex-wrap: wrap;
 
   font-family: $text-font-family;
   font-style: normal;
@@ -41,5 +40,11 @@
   &:hover,
   &:focus {
     opacity: 0.7;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .footer-list {
+    display: block;
   }
 }

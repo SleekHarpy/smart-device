@@ -2,7 +2,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 136px 0;
 
   display: none;
   width: 100%;
@@ -15,13 +14,15 @@
   z-index: 1;
 
   &--opened {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .modal-request__wrapper {
   position: relative;
-  margin: 0 auto;
+  //margin: 0 auto;
   padding: 7px 39px;
   padding-bottom: 38px;
 

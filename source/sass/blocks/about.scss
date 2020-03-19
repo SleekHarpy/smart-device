@@ -1,10 +1,10 @@
 .about {
   margin: 0 auto;
-  padding: 27px 13.2%;
+  padding: 27px 20px;
   padding-bottom: 20px;
-  padding-left: 14.8%;
 
-  max-width: $desktop-max-width;
+
+  max-width: 1210px;
 
   font-family: $text-font-family;
   font-style: normal;
@@ -16,7 +16,7 @@
 }
 
 .about__wrapper {
-  padding-left: 270px;
+  padding-left: 180px;
   padding-bottom: 90px;
 
   background-color: $main-color;
@@ -24,7 +24,7 @@
   background-repeat: no-repeat;
   background-size: 214px;
   background-position-y: 3px;
-  background-position-x: 68px;
+  background-position-x: -22px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/about-year@2x.png");
@@ -43,6 +43,8 @@
 
 .about__wrapper p {
   max-width: 985px;
+
+  font-size: 16px;
 }
 
 .about__button {
