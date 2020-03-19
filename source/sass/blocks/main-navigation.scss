@@ -1,7 +1,6 @@
 .main-navigation {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 
   font-family: $text-font-family;
   font-style: normal;
@@ -12,7 +11,7 @@
 }
 
 .main-navigation__logo {
-  margin-right: 118px;
+  margin-right: 8.2%;
 }
 
 .main-navigation__logo-image {
@@ -68,8 +67,8 @@
 }
 
 .main-navigation__email {
-  margin-right: 87px;
-  margin-left: 80px;
+  margin-right: 6%;
+  margin-left: 20px;
   padding-bottom: 2px;
 
 

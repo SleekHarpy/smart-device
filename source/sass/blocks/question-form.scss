@@ -13,6 +13,12 @@
   margin-bottom: 37px;
 
   width: 270px;
+
+  &--modal {
+    margin-bottom: 30px;
+
+    width: 100%;
+  }
 }
 
 .question-form input[type="text"],
@@ -43,6 +49,17 @@
     width: 0;
     height: 0;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.question-form--modal input[type="text"],
+.question-form--modal input[type="tel"] {
+  padding-left: 25px;
+  width: 100%;
 }
 
 .question-form input[type="text"] {
@@ -67,10 +84,22 @@
   &::placeholder {
     color: $main-color;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.question-form--modal textarea {
+  margin-bottom: 27px;
+  padding-top: 13px;
+  padding-left: 25px;
+
+  min-height: 105px;
 }
 
 .question-form button[type="submit"] {
-  margin-right: 37px;
   padding: 13px;
 
   width: 270px;
@@ -95,9 +124,17 @@
   }
 }
 
+.question-form--modal button[type="submit"] {
+  margin-bottom: 25px;
+  padding: 15px;
+
+  width: 100%;
+}
+
 .question-form input[type="checkbox"] + label {
   position: relative;
   margin-top: 8px;
+  margin-right: 13px;
   padding-left: 35px;
 
   max-width: 260px;
@@ -126,6 +163,12 @@
   &:focus {
     opacity: 1;
   }
+}
+
+.question-form--modal input[type="checkbox"] + label {
+  padding-left: 49px;
+
+  max-width: none;
 }
 
 .question-form input[type="checkbox"]:checked + label {

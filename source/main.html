@@ -9,15 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Описание страницы">
     <link rel="preload" href="fonts/pt-mono-v7-cyrillic_latin-regular.woff2" as="font">
-    <link rel="preload" href="fonts/pt-mono-v7-cyrillic_latin-regular.woff" as="font">
     <link rel="preload" href="fonts/roboto-condensed-v18-cyrillic_latin-regular.woff2" as="font">
-    <link rel="preload" href="fonts/roboto-condensed-v18-cyrillic_latin-regular.woff" as="font">
     <link rel="preload" href="fonts/roboto-condensed-v18-cyrillic_latin-700.woff2" as="font">
-    <link rel="preload" href="fonts/roboto-condensed-v18-cyrillic_latin-700.woff" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
-  <body class="common">
+  <body>
 
     <div style="display:none">
       <include src="build/img/sprite_auto.svg"></include>
@@ -47,16 +44,15 @@
             </svg>
             <span class="main-navigation__phone-text">+7 (495) 000 52 52</span>
           </a>
-          <button class="main-navigation__call" type="button">Заказать звонок</button>
+          <a class="main-navigation__call">Заказать звонок</a>
         </nav>
         <div class="intro">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button class="intro__button intro__button--desktop" type="button">Получить бесплатную консультацию</button>
-          <button class="intro__button intro__button--mobile" type="button">Бесплатная консультация</button>
+          <a class="intro__button intro__button--desktop" href="#contacts">Получить бесплатную консультацию</a>
+          <a class="intro__button intro__button--mobile" href="#contacts">Бесплатная консультация</a>
           <div class="intro__anchor">
-          <a class="intro__anchor-link" href="#">Скролл вниз</a>
-
+            <a class="intro__anchor-link" href="#features">Скролл вниз</a>
           </div>
         </div>
       </div>
@@ -65,7 +61,7 @@
     <main>
 
       <div class="background">
-        <section class="features">
+        <section id="features" class="features">
           <div class="features-list">
             <div class="features-list__row">
               <div class="features-list__item features-list__item--terms">
@@ -123,26 +119,26 @@
           <li class="services-list__item">
             <a class="services-list__link services-list__link--production" href="#">
               <h3>Производство печатных плат</h3>
-              <button class="services-list__button" type="button">></button>
+              <span class="services-list__button"></span>
             </a>
           </li>
           <li class="services-list__item">
             <a class="services-list__link services-list__link--mounting" href="#">
               <h3>Монтаж печатных плат</h3>
-              <button class="services-list__button" type="button">></button>
+              <span class="services-list__button"></span>
             </a>
           </li>
           <li class="services-list__item">
             <a class="services-list__link services-list__link--components" href="#">
               <h3>Комплектующие для светотехники</h3>
-              <button class="services-list__button" type="button">></button>
+              <span class="services-list__button"></span>
             </a>
           </li>
         </ul>
         </div>
       </section>
 
-      <section class="contacts">
+      <section id="contacts" class="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__content">
             <h2>Остались вопросы? Задайте их нам!</h2>
@@ -208,6 +204,7 @@
           </div>
           <div class="main-footer__navigation accordion-item">
             <h3 class="accordion-item-header">Разделы сайта</h3>
+            <button class="accordion-item-toggle" type="button"><span class="visually-hidden">Открыть/закрыть панель</span></button>
             <ul class="footer-list accordion-item-content">
               <li>
                 <ul class="footer-list__left-column">
@@ -228,6 +225,7 @@
           </div>
           <div class="main-footer__address accordion-item show">
             <h3 class="accordion-item-header">Наш офис</h3>
+            <button class="accordion-item-toggle" type="button"><span class="visually-hidden">Открыть/закрыть панель</span></button>
             <ul class="main-footer__contacts accordion-item-content">
               <li class="main-footer__contacts-item">
                 <address>г. Мытищи, Олимпийский проспект, д.10</address>
@@ -262,12 +260,12 @@
         <button class="modal-request__close" type="button"><span class="visually-hidden">Закрыть окно с формой обратной связи</span></button>
         <h2>Закажите звонок</h2>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="modal-form" action="#" method="GET">
-          <div class="modal-form__field">
+        <form class="question-form question-form--modal" action="#" method="GET">
+          <div class="question-form__field question-form__field--modal">
             <label class="visually-hidden" for="modal-name">Имя</label>
             <input id="modal-name" type="text" name="modal-name" placeholder="Имя" autocomplete="name" required>
           </div>
-          <div class="modal-form__field">
+          <div class="question-form__field question-form__field--modal">
             <label class="visually-hidden" for="modal-phone">Телефон</label>
             <input id="modal-phone" type="tel" name="modal-phone" placeholder="Телефон" autocomplete="tel">
           </div>

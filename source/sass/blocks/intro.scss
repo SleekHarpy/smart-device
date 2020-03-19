@@ -51,6 +51,8 @@
   margin-left: 98px;
   margin-bottom: 130px;
   padding: 18px 0;
+
+  display: block;
   width: 407px;
 
   font-family: $main-font-family;
@@ -62,6 +64,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $main-color;
+  text-decoration: none;
 
   background-color: $secondary-color;
   border: none;

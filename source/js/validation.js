@@ -11,12 +11,6 @@ $('form').validate({
       messages: false,
       required: true
     }
-  },
-  messages: {
-    phone: {
-      checkMask: "Введите полный номер телефона"
-    },
-    name: "Введите Ваше имя",
   }
 });
 

@@ -1,8 +1,8 @@
 @import "normalize.scss";
 @import "variables.scss";
 @import "fonts.scss";
+@import "body.scss";
 @import "blocks/visually-hidden.scss";
-@import "blocks/common.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-navigation.scss";
 @import "blocks/main-footer.scss";
@@ -20,4 +20,3 @@
 @import "blocks/contacts.scss";
 @import "blocks/question-form.scss";
 @import "blocks/modal-request.scss";
-@import "blocks/modal-form.scss";

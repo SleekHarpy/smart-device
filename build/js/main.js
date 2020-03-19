@@ -1,25 +1,14 @@
 'use strict';
 
-var introAnchorLink = $('.intro__anchor-link');
-var featuresAnchor = $('.features');
-var introButton = $('.intro__button');
-var contactsAnchor = $('.contacts');
-
-function anchorScroll(link, anchor) {
-
-  link.on('click', function(e){
-    $('html,body').stop().animate({ scrollTop: anchor.offset().top }, 1000);
-    e.preventDefault();
-  });
-
-};
-
-anchorScroll(introAnchorLink, featuresAnchor);
-anchorScroll(introButton, contactsAnchor);
+$('body').on('click', '[href*="#"]', function (e) {
+  $('html,body').stop().animate({scrollTop: $(this.hash).offset().top}, 1000);
+  e.preventDefault();
+});
 
 'use strict';
 
 var size = 211;
+var tabletWidth = 1023;
 var aboutText1 = $('.about__text-1');
 var aboutText2 = $('.about__text-2');
 
@@ -28,14 +17,18 @@ function cropText(element) {
   var newsText = newsContent.text();
 
   if (newsText.length > size) {
+    console.log(newsContent);
     newsContent.text(newsText.slice(0, size) + '..');
   }
 }
 
 $(window).resize(function () {
-  if (document.documentElement.clientWidth < 1023) {
+  if (document.documentElement.clientWidth <= tabletWidth) {
     cropText(aboutText1);
     cropText(aboutText2);
+  }
+  if (document.documentElement.clientWidth > tabletWidth) {
+    window.location.reload(true);
   }
 });
 
@@ -43,7 +36,7 @@ $(window).resize(function () {
 
 document.addEventListener('DOMContentLoaded', function() {
   var ids = ['modal-name', 'modal-phone', 'modal-question'];
-	for (var id of ids) {
+  for (var id of ids) {
     var input = document.getElementById(id);
     input.value = localStorage.getItem(id);
     (function(id, input) {
@@ -58,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 var ESC_KEYCODE = 27;
 
-var common = document.querySelector('.common');
+var bodyTag = document.querySelector('body');
 var buttonCall = document.querySelector('.main-navigation__call');
 var modalRequest = document.querySelector('.modal-request');
 var modalRequestWrapper = document.querySelector('.modal-request__wrapper');
@@ -66,12 +59,12 @@ var buttonClose = modalRequest.querySelector('.modal-request__close');
 
 function onButtonClick() {
   modalRequest.classList.add('modal-request--opened');
-  common.style.overflow = 'hidden';
+  bodyTag.style.overflow = 'hidden';
 }
 
 function onButtonCloseClick() {
   modalRequest.classList.remove('modal-request--opened');
-  common.style.overflow = 'auto';
+  bodyTag.style.overflow = 'auto';
 }
 
 var onModalEscPress = function (evt) {
@@ -101,12 +94,6 @@ $('form').validate({
       messages: false,
       required: true
     }
-  },
-  messages: {
-    phone: {
-      checkMask: "Введите полный номер телефона"
-    },
-    name: "Введите Ваше имя",
   }
 });
 

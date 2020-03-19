@@ -3,6 +3,7 @@
   background-image: url("../img/background-intro2-desktop@1x.png"), url("../img/background-intro@1x.png");
   background-repeat: no-repeat;
   background-size: auto, cover;
+  background-position-x: center, center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/background-intro2-desktop@2x.png"), url("../img/background-intro@2x.png");
@@ -12,11 +13,10 @@
 
 .main-header__wrapper {
   margin: 0 auto;
-  padding: 33px 0;
-  padding-left: 13.2%;
-  padding-right: 13.3%;
+  padding: 33px 20px;
+  padding-right: 22px;
 
-  max-width: $desktop-max-width;
+  max-width: 1452px;
 }
 
 @media (max-width: $tablet-max-width) {
