@@ -21,6 +21,6 @@ $(window).resize(function () {
     cropText(aboutText2);
   }
   if (document.documentElement.clientWidth > tabletWidth) {
-    //window.location.reload(true);
+    window.location.reload(true);
   }
 });
