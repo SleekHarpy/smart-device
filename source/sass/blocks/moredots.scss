@@ -1,0 +1,19 @@
+span,
+p,
+lebel {
+  word-break: break-word;
+}
+
+.moredots {
+ display: none;
+}
+
+@media (max-width: $tablet-max-width) {
+  .content_text_feedfull span{
+    display: none;
+  }
+
+  .moredots {
+   display: inline-block;
+  }
+}

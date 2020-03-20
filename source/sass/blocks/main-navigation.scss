@@ -137,7 +137,6 @@
 
   .main-navigation__toggle {
     margin-right: 37px;
-    margin-bottom: 6px;
   }
 
   .main-navigation__email {
@@ -147,6 +146,7 @@
   }
 
   .main-navigation__phone {
+    margin-top: 1px;
     margin-right: 0;
 
     width: min-content;

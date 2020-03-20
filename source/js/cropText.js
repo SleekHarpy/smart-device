@@ -1,26 +1,20 @@
 'use strict';
 
-var size = 211;
-var tabletWidth = 1023;
-var aboutText1 = $('.about__text-1');
-var aboutText2 = $('.about__text-2');
+$(document).ready(function () {
+  var showChar = 211;
+  var ellipsestext = '..';
 
-function cropText(element) {
-  var newsContent = element;
-  var newsText = newsContent.text();
+  $('.about__text-2').each(function () {
+    var content = $(this).html();
 
-  if (newsText.length > size) {
-    console.log(newsContent);
-    newsContent.text(newsText.slice(0, size) + '..');
-  }
-}
+    if(content.length > showChar) {
 
-$(window).resize(function () {
-  if (document.documentElement.clientWidth <= tabletWidth) {
-    cropText(aboutText1);
-    cropText(aboutText2);
-  }
-  if (document.documentElement.clientWidth > tabletWidth) {
-    window.location.reload(true);
-  }
+      var c = content.substr(0, showChar);
+      var h = content.substr(showChar, content.length - showChar);
+
+      var html = c + '<span class="moredots">' + ellipsestext + '&nbsp;</span><span class="content_text_feedfull"><span>' + h + '</span>&nbsp;&nbsp;</span>';
+
+      $(this).html(html);
+    }
+  });
 });

@@ -4,12 +4,15 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1170px;
 
   list-style: none;
 }
 
 .services-list__item {
+  margin-bottom: 30px;
+
   width: 31.6%;
 }
 
